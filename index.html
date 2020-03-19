@@ -1,39 +1,57 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>ROI Calculator</title>
   </head>
   <body>
     <h1>ROI Calculator</h1>
 
     <form>
-        <label for="amntInvested">Amount Invested: </label>
-        <input type="text">
+      <table>
+        <tr>
+          <td><label for="amntInvested">Amount Invested: </label></td>
+          <td><input type="number" /></td>
+        </tr>
 
-        <br />
-        <br />
+        <tr>
+          <td><label for="amntReturned">Amount Returned: </label></td>
+          <td><input type="number" /></td>
+        </tr>
 
-        <label for="amntReturned">Amount Returned: </label>
-        <input type="text" value="$">
+        <tr>
+          <td><label for="startDate">Starting Date:</label></td>
+          <td><input type="date" /></td>
+        </tr>
 
-        <br />
-        <br />
+        <tr>
+          <td><label for="endDate">Ending Date:</label></td>
+          <td><input type="date" /></td>
+        </tr>
 
-        <label for="startDate">Starting Date:</label>
-        <input type="date">
-
-        <br />
-        <br />
-
-        <label for="endDate">Ending Date:</label>
-        <input type="date">
-
-        <br />
-        <br />
-
-        <button type="submit">Calculate</button>
-
+        <tr>
+          <td><button type="submit">Calculate</button></td>
+        </tr>
+      </table>
     </form>
+
+    <table>
+      <tr>
+        <td>Investment Gain</td>
+        <td>$2000.00</td>
+      </tr>
+      <tr>
+        <td>ROI</td>
+        <td>66.7%</td>
+      </tr>
+      <tr>
+        <td>Annualized ROI</td>
+        <td>30%</td>
+      </tr>
+      <tr>
+        <td>Investment Length</td>
+        <td>4.5 years</td>
+      </tr>
+    </table>
   </body>
 </html>
