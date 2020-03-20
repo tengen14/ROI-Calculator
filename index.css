@@ -1,0 +1,37 @@
+body {
+  background-color: cornsilk;
+}
+
+h1 {
+  color: green;
+  text-align: center;
+  padding-bottom: 30px;
+  text-decoration: underline;
+}
+
+#calculation_table {
+  padding: 10px;
+  background-color: white;
+}
+
+#calculation_table td {
+  padding: 7px;
+}
+
+#result_table {
+  background-color: white;
+}
+
+#result_table td {
+  padding: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+    margin: 15px;
+}

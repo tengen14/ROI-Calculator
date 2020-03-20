@@ -3,55 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <title>ROI Calculator</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
   </head>
   <body>
     <h1>ROI Calculator</h1>
 
-    <form>
-      <table>
-        <tr>
-          <td><label for="amntInvested">Amount Invested: </label></td>
-          <td><input type="number" /></td>
-        </tr>
+    <div class="container">
+      <!-- CALCULATION TABLE -->
+      <form>
+        <table id="calculation_table">
+          <tr>
+            <td><label for="amntInvested">Amount Invested: </label></td>
+            <td><input type="number" /></td>
+          </tr>
 
-        <tr>
-          <td><label for="amntReturned">Amount Returned: </label></td>
-          <td><input type="number" /></td>
-        </tr>
+          <tr>
+            <td><label for="amntReturned">Amount Returned: </label></td>
+            <td><input type="number" /></td>
+          </tr>
 
-        <tr>
-          <td><label for="startDate">Starting Date:</label></td>
-          <td><input type="date" /></td>
-        </tr>
+          <tr>
+            <td><label for="startDate">Starting Date:</label></td>
+            <td><input type="date" /></td>
+          </tr>
 
-        <tr>
-          <td><label for="endDate">Ending Date:</label></td>
-          <td><input type="date" /></td>
-        </tr>
+          <tr>
+            <td><label for="endDate">Ending Date:</label></td>
+            <td><input type="date" /></td>
+          </tr>
 
+          <tr>
+            <td><button type="submit">Calculate</button></td>
+          </tr>
+        </table>
+      </form>
+
+      <!-- RESULT TABLE -->
+      <table id="result_table">
         <tr>
-          <td><button type="submit">Calculate</button></td>
+          <td>Investment Gain</td>
+          <td>$2000.00</td>
+        </tr>
+        <tr>
+          <td>ROI</td>
+          <td>66.7%</td>
+        </tr>
+        <tr>
+          <td>Annualized ROI</td>
+          <td>30%</td>
+        </tr>
+        <tr>
+          <td>Investment Length</td>
+          <td>4.5 years</td>
         </tr>
       </table>
-    </form>
-
-    <table>
-      <tr>
-        <td>Investment Gain</td>
-        <td>$2000.00</td>
-      </tr>
-      <tr>
-        <td>ROI</td>
-        <td>66.7%</td>
-      </tr>
-      <tr>
-        <td>Annualized ROI</td>
-        <td>30%</td>
-      </tr>
-      <tr>
-        <td>Investment Length</td>
-        <td>4.5 years</td>
-      </tr>
-    </table>
+      
+    </div>
   </body>
 </html>
