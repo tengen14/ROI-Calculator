@@ -24,6 +24,7 @@ h1 {
 
 #result_table td {
   padding: 15px;
+  outline: 1px solid black;
 }
 
 .container {
@@ -33,5 +34,6 @@ h1 {
 }
 
 table {
-    margin: 15px;
+    margin: 20px;
+    outline: 2px solid black;
 }
